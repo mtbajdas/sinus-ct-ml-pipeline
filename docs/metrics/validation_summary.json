@@ -1,0 +1,32 @@
+[
+  {
+    "scenario": "normal",
+    "retention_cysts": 0,
+    "omc_left": 57.925000000000004,
+    "omc_right": 57.70833333333333,
+    "sclerotic_pct": 5.4916854855265855,
+    "np_airway_pct": 68.7,
+    "mucosa2_soft_frac": 0.006609315988250105,
+    "mucosa6_soft_frac": 0.0019567180021833647
+  },
+  {
+    "scenario": "mucosal_severe",
+    "retention_cysts": 0,
+    "omc_left": 7.925,
+    "omc_right": 7.866666666666666,
+    "sclerotic_pct": 4.76009139375476,
+    "np_airway_pct": 24.585,
+    "mucosa2_soft_frac": 0.0007727842558087616,
+    "mucosa6_soft_frac": 0.0002721878459053875
+  },
+  {
+    "scenario": "opacified_left_maxillary",
+    "retention_cysts": 0,
+    "omc_left": 54.325,
+    "omc_right": 57.70833333333333,
+    "sclerotic_pct": 5.4916854855265855,
+    "np_airway_pct": 65.99000000000001,
+    "mucosa2_soft_frac": 0.00428071491063617,
+    "mucosa6_soft_frac": 0.0012850413865642292
+  }
+]

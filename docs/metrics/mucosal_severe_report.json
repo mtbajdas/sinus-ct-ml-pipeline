@@ -1,0 +1,57 @@
+{
+  "patient_id": "DUMMY_mucosal_severe",
+  "study_date": "20251026",
+  "context": "post_steroid_evaluation",
+  "findings": [
+    "LEFT OMC significant narrowing: 8%",
+    "RIGHT OMC significant narrowing: 8%",
+    "Elevated bone density: 541.7 HU",
+    "Adenoid hypertrophy: 63.4% obstruction",
+    "Nasopharyngeal narrowing: 24.6% patent"
+  ],
+  "metrics": {
+    "mucosal_thickening": {
+      "2": {
+        "volume_ml": 14.55775,
+        "soft_tissue_fraction": 0.0007727842558087616,
+        "mean_hu": -856.0993041992188
+      },
+      "3": {
+        "volume_ml": 25.83575,
+        "soft_tissue_fraction": 0.0004354431359647001,
+        "mean_hu": -885.797607421875
+      },
+      "4": {
+        "volume_ml": 30.5245,
+        "soft_tissue_fraction": 0.00036855640551032776,
+        "mean_hu": -891.6719970703125
+      },
+      "5": {
+        "volume_ml": 38.18825,
+        "soft_tissue_fraction": 0.0002945932322114787,
+        "mean_hu": -897.9259033203125
+      },
+      "6": {
+        "volume_ml": 41.33175,
+        "soft_tissue_fraction": 0.0002721878459053875,
+        "mean_hu": -899.7774047851562
+      }
+    },
+    "retention_cysts": 0,
+    "asymmetry": {
+      "air_pct": 1.6628725901685972,
+      "tissue_pct": 0.10152874744046925
+    },
+    "omc_patency": {
+      "left_score": 7.925,
+      "right_score": 7.866666666666666
+    },
+    "bony_changes": {
+      "sclerotic_fraction_pct": 4.76009139375476
+    },
+    "nasopharynx": {
+      "tissue_fraction_pct": 63.3575,
+      "airway_fraction_pct": 24.585
+    }
+  }
+}

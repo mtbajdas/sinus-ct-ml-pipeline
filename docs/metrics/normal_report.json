@@ -1,0 +1,56 @@
+{
+  "patient_id": "DUMMY_normal",
+  "study_date": "20251026",
+  "context": "post_steroid_evaluation",
+  "findings": [
+    "LEFT OMC mild narrowing: 58%",
+    "RIGHT OMC mild narrowing: 58%",
+    "Sclerotic bone changes: 5.5%",
+    "Elevated bone density: 587.4 HU"
+  ],
+  "metrics": {
+    "mucosal_thickening": {
+      "2": {
+        "volume_ml": 19.064,
+        "soft_tissue_fraction": 0.006609315988250105,
+        "mean_hu": -688.238037109375
+      },
+      "3": {
+        "volume_ml": 36.484,
+        "soft_tissue_fraction": 0.0035495011511895627,
+        "mean_hu": -793.6978149414062
+      },
+      "4": {
+        "volume_ml": 44.56025,
+        "soft_tissue_fraction": 0.002906177591014413,
+        "mean_hu": -818.1489868164062
+      },
+      "5": {
+        "volume_ml": 59.41175,
+        "soft_tissue_fraction": 0.0021797035098276014,
+        "mean_hu": -846.9428100585938
+      },
+      "6": {
+        "volume_ml": 66.18225,
+        "soft_tissue_fraction": 0.0019567180021833647,
+        "mean_hu": -856.0608520507812
+      }
+    },
+    "retention_cysts": 0,
+    "asymmetry": {
+      "air_pct": 1.1451665036086078,
+      "tissue_pct": 0.11814788835807503
+    },
+    "omc_patency": {
+      "left_score": 57.925000000000004,
+      "right_score": 57.70833333333333
+    },
+    "bony_changes": {
+      "sclerotic_fraction_pct": 5.4916854855265855
+    },
+    "nasopharynx": {
+      "tissue_fraction_pct": 20.335,
+      "airway_fraction_pct": 68.7
+    }
+  }
+}

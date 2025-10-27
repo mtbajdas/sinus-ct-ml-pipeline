@@ -1,0 +1,26 @@
+# Python / build
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Data artifacts
+data/raw/
+data/processed/
+models/
+notebooks/*.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+docs/last_run_meta.json
+shared.html
+docs/*.html

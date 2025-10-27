@@ -1,0 +1,16 @@
+numpy>=1.26,<2.0  # PyRadiomics requires numpy 1.x
+pandas
+matplotlib
+nibabel
+pydicom
+SimpleITK
+torch
+torchvision
+monai
+scikit-image
+PyRadiomics==3.0.1
+jupyter
+plotly
+pyyaml
+scipy
+pytest

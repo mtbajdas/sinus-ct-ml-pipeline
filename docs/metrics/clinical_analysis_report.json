@@ -1,0 +1,58 @@
+{
+  "patient_id": "19420531",
+  "study_date": "20250418",
+  "context": "post_steroid_evaluation",
+  "findings": [
+    "Retention cysts: 12 lesions",
+    "LEFT OMC significant narrowing: 0%",
+    "RIGHT OMC significant narrowing: 0%",
+    "Sclerotic bone changes: 31.4%",
+    "Elevated bone density: 678.0 HU",
+    "Nasopharyngeal narrowing: 0.0% patent"
+  ],
+  "metrics": {
+    "mucosal_thickening": {
+      "2": {
+        "volume_ml": 635.8787872669101,
+        "soft_tissue_fraction": 0.002367952886325992,
+        "mean_hu": -948.9559936523438
+      },
+      "3": {
+        "volume_ml": 1237.8429411937595,
+        "soft_tissue_fraction": 0.0015544250693118582,
+        "mean_hu": -963.6240844726562
+      },
+      "4": {
+        "volume_ml": 1528.3597397637964,
+        "soft_tissue_fraction": 0.0013379809438390203,
+        "mean_hu": -966.6282958984375
+      },
+      "5": {
+        "volume_ml": 2087.7788297621014,
+        "soft_tissue_fraction": 0.0010575283813712244,
+        "mean_hu": -970.543701171875
+      },
+      "6": {
+        "volume_ml": 2355.831312151909,
+        "soft_tissue_fraction": 0.0009660238282606862,
+        "mean_hu": -971.8515625
+      }
+    },
+    "retention_cysts": 12,
+    "asymmetry": {
+      "air_pct": 0.5060007620898582,
+      "tissue_pct": 1.878731953036696
+    },
+    "omc_patency": {
+      "left_score": 0.0,
+      "right_score": 0.0
+    },
+    "bony_changes": {
+      "sclerotic_fraction_pct": 31.402088564294374
+    },
+    "nasopharynx": {
+      "tissue_fraction_pct": 22.4075,
+      "airway_fraction_pct": 0.0
+    }
+  }
+}
