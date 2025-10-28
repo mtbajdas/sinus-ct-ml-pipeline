@@ -1,0 +1,71 @@
+{
+  "scan": "Orlando_April_2025_series_5309",
+  "ground_truth": {
+    "omc_patency": "Patent bilaterally",
+    "cyst_count": 0,
+    "sclerotic_fraction": "< 5%",
+    "sphenoid_mucus": "trace (< 1 mL)"
+  },
+  "calibration": {
+    "air_anchor": {
+      "measured_hu": -990.0,
+      "expected_hu": -1000.0,
+      "delta": 10.0,
+      "pass": true,
+      "n_samples": 6314727
+    },
+    "bone_anchor": {
+      "measured_hu": 1399.0,
+      "expected_hu": 1200.0,
+      "delta": 199.0,
+      "pass": true,
+      "n_samples": 100027
+    },
+    "correction": {
+      "slope": 0.9208874005860193,
+      "intercept": -88.32147341984091,
+      "apply": true,
+      "max_delta": 199.0
+    },
+    "applied": true
+  },
+  "adaptive_thresholds": {
+    "air_threshold": -395.0,
+    "tissue_lower": -295.0,
+    "tissue_upper": -95.0,
+    "bone_threshold": 300.0,
+    "sclerosis_threshold": 900.0,
+    "air_peak": -995.0,
+    "tissue_peak": -195.0
+  },
+  "omc_patency": {
+    "left": {
+      "air_fraction": 0.14575163398692811,
+      "air_fraction_pct": 14.575163398692812,
+      "classification": "Patent",
+      "confidence": 0.8639985307741741,
+      "best_candidate": "anterior_superior"
+    },
+    "right": {
+      "air_fraction": 0.18888888888888888,
+      "air_fraction_pct": 18.88888888888889,
+      "classification": "Patent",
+      "confidence": 0.7888500619779959,
+      "best_candidate": "anterior_superior"
+    }
+  },
+  "sclerosis": {
+    "sclerotic_fraction": 0.0004654548926470062,
+    "sclerotic_volume_voxels": 1053,
+    "n_clusters": 11,
+    "reference_mean_hu": 1134.118408203125,
+    "reference_std_hu": 155.809814453125,
+    "threshold_hu": 1445.738037109375,
+    "z_threshold": 2.0
+  },
+  "cysts": {
+    "cyst_count": 0,
+    "cysts": []
+  },
+  "tests_passed": true
+}

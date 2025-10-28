@@ -13,6 +13,7 @@ import json
 from scipy import ndimage
 from scipy.ndimage import label, binary_erosion
 import pandas as pd
+from clinical_scores import compute_lund_mackay
 
 
 def run_clinical_investigation(
@@ -271,7 +272,8 @@ def run_clinical_investigation(
     log(f"\nSinus wall bone volume: {wall_bone.sum() * voxel_volume_mm3 / 1000:.1f} mL")
     log(f"Sclerotic bone fraction: {sclerotic_fraction * 100:.1f}%")
     log(f"\nBone HU statistics:")
-    log(f"  Mean: {bone_hu_values.mean():.1f} HU")
+    bone_mean_hu = float(bone_hu_values.mean()) if bone_hu_values.size > 0 else 0.0
+    log(f"  Mean: {bone_mean_hu:.1f} HU")
     log(f"  Median: {np.median(bone_hu_values):.1f} HU")
     log(f"  95th percentile: {np.percentile(bone_hu_values, 95):.1f} HU")
 
@@ -408,6 +410,10 @@ def run_clinical_investigation(
     log("\n" + "="*80)
 
 # Save detailed report
+    # 8.1 Standard and conservative clinical scores (Lund–Mackay)
+    lm = compute_lund_mackay(volume)
+    lm_cons = compute_lund_mackay(volume, conservative=True)
+
     clinical_report = {
         'patient_id': meta['patient_id'],
         'study_date': meta['study_date'],
@@ -421,11 +427,16 @@ def run_clinical_investigation(
                 'left_score': float(left_omc['patency_score']), 
                 'right_score': float(right_omc['patency_score'])
             },
-            'bony_changes': {'sclerotic_fraction_pct': float(sclerotic_fraction * 100)},
+            'bony_changes': {
+                'sclerotic_fraction_pct': float(sclerotic_fraction * 100),
+                'bone_mean_hu': bone_mean_hu,
+            },
             'nasopharynx': {
                 'tissue_fraction_pct': float(tissue_fraction * 100), 
                 'airway_fraction_pct': float(airway_fraction * 100)
-            }
+            },
+            'lund_mackay': lm,
+            'lund_mackay_conservative': lm_cons
         }
     }
 

@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "nifti_path": "data\\processed\\sinus_ct.nii.gz",
+    "volume_shape": [
+      188,
+      512,
+      512
+    ],
+    "spacing_mm": [
+      0.5375429391860962,
+      0.5375429391860962,
+      1.0
+    ],
+    "roi_provider": "TotalSegmentatorROIProvider(fast=True)"
+  },
+  "deep_sinuses": {
+    "sphenoid": {
+      "sphenoid_volume_ml": 11.186792561709881,
+      "left_volume_ml": 4.91276887857914,
+      "right_volume_ml": 6.274023683130741,
+      "pneumatization_grade": 3,
+      "air_fraction": 0.048962696533721844
+    },
+    "sphenoid_opacification": {
+      "left_opacification_grade": 2,
+      "right_opacification_grade": 2,
+      "left_air_fraction": 0.048053380278840124,
+      "right_air_fraction": 0.0617222121046561,
+      "fluid_detected": false
+    },
+    "posterior_ethmoid": {
+      "posterior_ethmoid_volume_ml": 5.7986969683170315,
+      "left_volume_ml": 2.217131843626499,
+      "right_volume_ml": 3.581565124690533,
+      "cell_count_estimate": 8,
+      "air_fraction": 0.02325592175404441
+    },
+    "skull_base": {
+      "mean_thickness_mm": 2.7142245769500732,
+      "minimum_thickness_mm": 1.0750858783721924,
+      "bone_volume_ml": 32.8559117090106,
+      "bone_hu_mean": 818.8606066469083
+    }
+  },
+  "all_sinuses": {},
+  "skull_structures": {
+    "skull": {
+      "volume_ml": 560.7448036563992,
+      "mean_hu": 823.0895577840611,
+      "voxel_count": 1940613
+    }
+  },
+  "temporal_bones": {
+    "error": "Temporal bones not segmented",
+    "note": "Scan may not include temporal bones or TotalSegmentator not available"
+  },
+  "brain": {
+    "brain": {
+      "total_volume_ml": 1171.7259521484375,
+      "mean_hu": 42.602950913705094,
+      "std_hu": 79.31474018438426,
+      "csf_volume_ml": 76.1045747564435,
+      "white_matter_volume_ml": 53.4619749391079,
+      "gray_matter_volume_ml": 54.59004514861107,
+      "csf_fraction_pct": 6.4950828380084955,
+      "white_matter_fraction_pct": 4.562668630950341,
+      "gray_matter_fraction_pct": 4.658942862575192
+    },
+    "abnormality_screening": {
+      "atrophy_concern": false,
+      "hydrocephalus_concern": false,
+      "density_concern": false,
+      "pituitary_concern": false,
+      "notes": [],
+      "interpretation": "Brain parenchyma appears within normal limits. No obvious structural abnormalities detected."
+    }
+  }
+}

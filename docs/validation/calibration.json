@@ -1,0 +1,23 @@
+{
+  "air_anchor": {
+    "measured_hu": -990.0,
+    "expected_hu": -1000.0,
+    "delta": 10.0,
+    "pass": true,
+    "n_samples": 6314727
+  },
+  "bone_anchor": {
+    "measured_hu": 1399.0,
+    "expected_hu": 1200.0,
+    "delta": 199.0,
+    "pass": true,
+    "n_samples": 100027
+  },
+  "correction": {
+    "slope": 0.9208874005860193,
+    "intercept": -88.32147341984091,
+    "apply": true,
+    "max_delta": 199.0
+  },
+  "applied": true
+}

@@ -1,58 +1,205 @@
 {
+  "analysis_timestamp": "2025-10-28T14:21:37.305057",
   "patient_id": "19420531",
   "study_date": "20250418",
-  "context": "post_steroid_evaluation",
-  "findings": [
-    "Retention cysts: 12 lesions",
-    "LEFT OMC significant narrowing: 0%",
-    "RIGHT OMC significant narrowing: 0%",
-    "Sclerotic bone changes: 31.4%",
-    "Elevated bone density: 678.0 HU",
-    "Nasopharyngeal narrowing: 0.0% patent"
-  ],
+  "series_description": "",
+  "scan_parameters": {
+    "dimensions": [
+      188,
+      512,
+      512
+    ],
+    "spacing_mm": [
+      0.5375429391860962,
+      0.5375429391860962,
+      1.0
+    ],
+    "manufacturer": "Unknown"
+  },
+  "calibration": {
+    "air_anchor_measured_hu": -990.0,
+    "bone_anchor_measured_hu": 1399.0,
+    "correction_applied": true
+  },
+  "volumetric": {
+    "air_volume_ml": 10677.344323630392,
+    "soft_tissue_volume_ml": 2089.3198129658103,
+    "air_fraction": 0.8363456741235415,
+    "adaptive_air_threshold_hu": -575.0
+  },
   "metrics": {
-    "mucosal_thickening": {
-      "2": {
-        "volume_ml": 635.8787872669101,
-        "soft_tissue_fraction": 0.002367952886325992,
-        "mean_hu": -948.9559936523438
-      },
-      "3": {
-        "volume_ml": 1237.8429411937595,
-        "soft_tissue_fraction": 0.0015544250693118582,
-        "mean_hu": -963.6240844726562
-      },
-      "4": {
-        "volume_ml": 1528.3597397637964,
-        "soft_tissue_fraction": 0.0013379809438390203,
-        "mean_hu": -966.6282958984375
-      },
-      "5": {
-        "volume_ml": 2087.7788297621014,
-        "soft_tissue_fraction": 0.0010575283813712244,
-        "mean_hu": -970.543701171875
-      },
-      "6": {
-        "volume_ml": 2355.831312151909,
-        "soft_tissue_fraction": 0.0009660238282606862,
-        "mean_hu": -971.8515625
-      }
-    },
-    "retention_cysts": 12,
-    "asymmetry": {
-      "air_pct": 0.5060007620898582,
-      "tissue_pct": 1.878731953036696
-    },
     "omc_patency": {
-      "left_score": 0.0,
-      "right_score": 0.0
+      "left_score": 12.766884531590414,
+      "left_status": "Patent",
+      "right_score": 17.037037037037038,
+      "right_status": "Patent",
+      "method": "Multi-candidate corridor"
     },
     "bony_changes": {
-      "sclerotic_fraction_pct": 31.402088564294374
+      "sclerotic_fraction_pct": 0.19059072240821784,
+      "wall_volume_ml": 212.40400456255674,
+      "bone_mean_hu": -17.72567367553711,
+      "reference_bone_median": 1134.118408203125,
+      "reference_bone_std": 155.809814453125,
+      "n_sclerotic_clusters": 21,
+      "method": "Z-score (wall shell vs reference bone)"
     },
-    "nasopharynx": {
-      "tissue_fraction_pct": 22.4075,
-      "airway_fraction_pct": 0.0
+    "retention_cysts": 0,
+    "cyst_details": [],
+    "deep_sinuses": {
+      "sphenoid": {
+        "sphenoid_volume_ml": 10.694128702282905,
+        "left_volume_ml": 4.690275522708893,
+        "right_volume_ml": 6.003853179574013,
+        "pneumatization_grade": 3,
+        "air_fraction": 0.04680639025476031
+      },
+      "sphenoid_opacification": {
+        "left_opacification_grade": 2,
+        "right_opacification_grade": 2,
+        "left_air_fraction": 0.04619933628766264,
+        "right_air_fraction": 0.05943564216192153,
+        "fluid_detected": false
+      },
+      "posterior_ethmoid": {
+        "posterior_ethmoid_volume_ml": 5.5900733281373975,
+        "left_volume_ml": 2.124089167535305,
+        "right_volume_ml": 3.4659841606020927,
+        "cell_count_estimate": 8,
+        "air_fraction": 0.022419227738376676
+      },
+      "skull_base": {
+        "mean_thickness_mm": 2.469003677368164,
+        "minimum_thickness_mm": 1.0750858783721924,
+        "bone_volume_ml": 26.72376365929842,
+        "bone_hu_mean": 786.4072875976562
+      }
+    },
+    "oropharynx": {
+      "tonsils": {
+        "left_tonsil_volume_ml": 2.717019513309002,
+        "right_tonsil_volume_ml": 4.0011240243315696,
+        "total_tonsil_volume_ml": 6.718143537640572,
+        "asymmetry_ratio": 1.4726151228331383,
+        "has_coverage": true
+      },
+      "brodsky": {
+        "brodsky_grade": 4,
+        "obstruction_pct": 98.18181818181819,
+        "minimum_airway_diameter_mm": 1.0,
+        "maximum_tonsil_span_mm": 55.0
+      },
+      "airway": {
+        "minimum_diameter_mm": 80.36290107212442,
+        "mean_diameter_mm": 118.02417022395804,
+        "minimum_cross_sectional_area_mm2": 5072.255174160004,
+        "mean_cross_sectional_area_mm2": 11971.533923412624,
+        "airway_volume_ml": 489.0762263016701
+      }
+    },
+    "lund_mackay": {
+      "by_region": {
+        "frontal": {
+          "L": 0,
+          "R": 0
+        },
+        "ant_ethmoid": {
+          "L": 0,
+          "R": 0
+        },
+        "post_ethmoid": {
+          "L": 0,
+          "R": 0
+        },
+        "maxillary": {
+          "L": 0,
+          "R": 0
+        },
+        "sphenoid": {
+          "L": 0,
+          "R": 0
+        }
+      },
+      "omc": {
+        "L": 2,
+        "R": 2
+      },
+      "totals": {
+        "lm20": 0,
+        "lm24": 4,
+        "left": 2,
+        "right": 2
+      },
+      "omc_patency_pct": {
+        "L": 0.0,
+        "R": 0.0
+      },
+      "criteria": {
+        "air_threshold": -400,
+        "soft_tissue_range": [
+          -100,
+          100
+        ],
+        "omc_patency_zero_threshold_pct": 60.0,
+        "opacification_cutpoints": [
+          0.1,
+          0.5
+        ]
+      }
+    },
+    "lund_mackay_conservative": {
+      "by_region": {
+        "frontal": {
+          "L": 0,
+          "R": 0
+        },
+        "ant_ethmoid": {
+          "L": 0,
+          "R": 0
+        },
+        "post_ethmoid": {
+          "L": 0,
+          "R": 0
+        },
+        "maxillary": {
+          "L": 0,
+          "R": 0
+        },
+        "sphenoid": {
+          "L": 0,
+          "R": 0
+        }
+      },
+      "omc": {
+        "L": 2,
+        "R": 2
+      },
+      "totals": {
+        "lm20": 0,
+        "lm24": 4,
+        "left": 2,
+        "right": 2
+      },
+      "omc_patency_pct": {
+        "L": 0.0,
+        "R": 0.0
+      },
+      "criteria": {
+        "air_threshold": -500,
+        "soft_tissue_range": [
+          -50,
+          50
+        ],
+        "omc_patency_zero_threshold_pct": 70.0,
+        "opacification_cutpoints": [
+          0.2,
+          0.7
+        ]
+      }
     }
-  }
+  },
+  "findings": [
+    "Sphenoid sinus opacification detected",
+    "Severe tonsillar obstruction (Grade 4/4)"
+  ]
 }

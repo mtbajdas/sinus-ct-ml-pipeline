@@ -1,0 +1,44 @@
+{
+  "patient_id": "19420531",
+  "study_date": "20250418",
+  "volumetric": {
+    "total_sinus_volume_ml": 5276.728355725884,
+    "air_volume_ml": 5268.032190422892,
+    "soft_tissue_volume_ml": 8.696165302991867,
+    "air_fraction": 0.9983519778323333,
+    "maxillary_left_ml": null,
+    "maxillary_right_ml": null,
+    "frontal_left_ml": null,
+    "frontal_right_ml": null,
+    "ethmoid_left_ml": null,
+    "ethmoid_right_ml": null,
+    "sphenoid_ml": null
+  },
+  "texture": {
+    "mean_intensity": -1025.830975836299,
+    "std_intensity": 0.0,
+    "skewness": -14.107336853688388,
+    "kurtosis": 205.5829075543654,
+    "entropy": 2.4558948777412586,
+    "glcm_contrast": 51.54215923649576,
+    "glcm_homogeneity": -0.4306246812780504,
+    "glcm_energy": 0.0,
+    "glrlm_sre": 0.53832491351641,
+    "glrlm_lre": 38.29239637538058
+  },
+  "asymmetry_score": null,
+  "metadata": {
+    "image_path": "data\\processed\\sinus_ct_5309.nii.gz",
+    "mask_path": null,
+    "volume_shape": [
+      125,
+      512,
+      755
+    ],
+    "spacing_mm": [
+      0.35632848739624023,
+      0.3563281297683716,
+      1.5
+    ]
+  }
+}
